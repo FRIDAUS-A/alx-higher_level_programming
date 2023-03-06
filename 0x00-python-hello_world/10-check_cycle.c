@@ -2,9 +2,14 @@
 #include <stdlib.h>
 #include "lists.h"
 
+/**
+ * check_cycle - check for cycle in a linked list
+ * @list: stores address of the first node
+ * Return: Allow success
+*/
 int check_cycle(listint_t *list)
 {
-	int *tmp = list;
+	listint_t *tmp = list;
 
 	while (list)
 	{
