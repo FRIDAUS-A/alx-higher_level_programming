@@ -10,7 +10,7 @@
 */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *new, *tmp1, *tmp2, *last, *first;
+	listint_t *new, *tmp1, *tmp2, *first;
 
 	first = *head;
 	new = (listint_t *)malloc(sizeof(listint_t));
