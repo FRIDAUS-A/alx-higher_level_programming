@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-alp = 97
-while (alp <= 122):
-    print(chr(alp), end="")
-    alp += 1
+for alp in range(97, 123):
+    print("{:c}".format(alp), end="")
