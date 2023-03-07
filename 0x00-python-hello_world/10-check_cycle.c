@@ -13,9 +13,13 @@ int check_cycle(listint_t *list)
 
 	while (list)
 	{
-		if (list->next == tmp)
+		if ((*list).next == tmp)
+		{
+			list = tmp;
 			return (1);
+		}
 		list = (*list).next;
 	}
+	list = tmp;
 	return (0);
 }
