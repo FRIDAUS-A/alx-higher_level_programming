@@ -9,7 +9,7 @@ else:
     result = 0
 if (result == -10):
     result == 0
-print("The last digit of", number, "is", result, "and is", end = " ")
+print("Last digit of", number, "is", result, "and is", end = " ")
 if ((result) > 5):
     print("greater than 5")
 elif ((result) == 0):
