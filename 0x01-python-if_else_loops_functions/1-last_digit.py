@@ -4,12 +4,12 @@ number = random.randint(-10000, 10000)
 if (number > 0):
     result = number % 10
 elif (number < 0):
-   result = (number % 10) - 10
+    result = (number % 10) - 10
 else:
     result = 0
 if (result == -10):
     result == 0
-print("Last digit of", number, "is", result, "and is", end = " ")
+print("Last digit of", number, "is", result, "and is", end=" ")
 if ((result) > 5):
     print("greater than 5")
 elif ((result) == 0):
