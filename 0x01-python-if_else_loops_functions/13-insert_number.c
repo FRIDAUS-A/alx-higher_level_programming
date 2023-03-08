@@ -45,10 +45,7 @@ listint_t *insert_node(listint_t **head, int number)
 	}
 	else
 	{
-		new2 = (listint_t *)malloc(sizeof(listint_t));
-		new2->n = (*head)->n;
-		before->next = new2;
-		new2->next = new;
+		(*head)->next = new;
 		new->next = NULL;
 	}
 	*head = first;
