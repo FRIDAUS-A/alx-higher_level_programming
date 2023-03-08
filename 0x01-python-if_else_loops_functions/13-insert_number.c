@@ -10,7 +10,7 @@
 */
 listint_t *insert_node(listint_t **head, int number)
 {
-	listint_t *new, *new2, *before, *tmp, *first;
+	listint_t *new, *before, *tmp, *first;
 	int count = 0;
 
 	first = *head;
