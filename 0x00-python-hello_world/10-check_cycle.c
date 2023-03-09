@@ -9,18 +9,18 @@
 */
 int check_cycle(listint_t *list)
 {
-	listint_t *tmp = list;
+	listint_t *list;
 
 	while (list)
 	{
 		while (tmp)
 		{
-			if (list->n == (tmp->next)->n)
+			if (list == tmp->next)
 				return (1);
 			tmp = tmp->next;
 		}
-		tmp = tmp->next;
-		list = (*list).next;
+		tmp = list->next;
+		list = list->next;
 	}
 	return (0);
 }
