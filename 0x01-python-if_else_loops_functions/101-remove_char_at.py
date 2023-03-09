@@ -8,4 +8,3 @@ def remove_char_at(str, n):
     for mem in str1:
         tmp += mem
     return (tmp)
-print(remove_char_at("School", 10))
