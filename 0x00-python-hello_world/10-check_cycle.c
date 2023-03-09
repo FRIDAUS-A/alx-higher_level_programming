@@ -22,6 +22,5 @@ int check_cycle(listint_t *list)
 		list = (*list).next;
 		tmp = list;
 	}
-	list = first;
 	return (0);
 }
