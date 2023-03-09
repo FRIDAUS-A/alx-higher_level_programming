@@ -19,8 +19,8 @@ int check_cycle(listint_t *list)
 			if (list->n == tmp->n)
 				return (1);
 		}
+		tmp = list->next;
 		list = (*list).next;
-		tmp = list;
 	}
 	return (0);
 }
