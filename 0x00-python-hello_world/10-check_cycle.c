@@ -19,5 +19,6 @@ int check_cycle(listint_t *list)
 		}
 		list = (*list).next;
 	}
+	list = tmp;
 	return (0);
 }
