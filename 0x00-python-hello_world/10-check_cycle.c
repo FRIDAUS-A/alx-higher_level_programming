@@ -15,11 +15,11 @@ int check_cycle(listint_t *list)
 	{
 		while (tmp)
 		{
-			tmp = tmp->next;
-			if (list->n == tmp->n)
+			if (list->n == (tmp->next)->n)
 				return (1);
+			tmp = tmp->next;
 		}
-		tmp = list->next;
+		tmp = tmp->next;
 		list = (*list).next;
 	}
 	return (0);
