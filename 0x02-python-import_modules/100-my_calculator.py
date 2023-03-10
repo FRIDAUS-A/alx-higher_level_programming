@@ -7,7 +7,7 @@ if (__name__ == "__main__"):
         exit(1)
         print()
     if (not (argv[2] == "+" or argv[2] == "-"
-        or argv[2] == "*" or argv[2] == "/")):
+             or argv[2] == "*" or argv[2] == "/")):
         print(f"Unknown operator. Available operators: +, -, * and /")
         exit(1)
         print()
