@@ -14,6 +14,3 @@ def no_c(my_string):
         my_string_tmp += mem
     my_strong = my_string_tmp
     return (my_string_tmp)
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
