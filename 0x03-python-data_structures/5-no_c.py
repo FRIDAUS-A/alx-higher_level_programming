@@ -13,4 +13,4 @@ def no_c(my_string):
     for mem in my_string:
         my_string_tmp += mem
     my_string = my_string_tmp
-    return (my_string_tmp)
+    return (my_string)
