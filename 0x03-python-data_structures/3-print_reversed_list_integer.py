@@ -8,4 +8,4 @@ def print_reversed_list_integer(my_list=[]):
         count = count - 1
     my_list = new_list
     for mem in my_list:
-        print("{:d}".format(mem))
+        print("{}".format(mem))
