@@ -8,8 +8,11 @@ def no_c(my_string):
             if (my_string[count] == 'C'):
                 my_string[count] = ' '
             else:
-                my_string.remove(my_string[count])
+                my_string[count] = ''
         count = count + 1
     for mem in my_string:
         my_string_tmp += mem
     return (my_string_tmp)
+print(no_c("Best School"))
+print(no_c("Chicago"))
+print(no_c("C is fun!"))
