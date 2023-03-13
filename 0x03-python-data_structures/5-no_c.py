@@ -12,6 +12,7 @@ def no_c(my_string):
         count = count + 1
     for mem in my_string:
         my_string_tmp += mem
+    my_strong = my_string_tmp
     return (my_string_tmp)
 print(no_c("Best School"))
 print(no_c("Chicago"))
