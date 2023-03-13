@@ -8,7 +8,7 @@ def no_c(my_string):
             if (my_string[count] == 'C'):
                 my_string[count] = ' '
             else:
-                my_string.remove(my_string[count])
+                my_string[count] = ''
         count = count + 1
     for mem in my_string:
         my_string_tmp += mem
