@@ -9,3 +9,4 @@ def print_reversed_list_integer(my_list=[]):
     my_list = new_list
     for mem in my_list:
         print("{:d}".format(mem))
+    return (my_list)
