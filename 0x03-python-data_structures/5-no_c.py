@@ -3,7 +3,7 @@ def no_c(my_string):
     count = 0
     my_string_tmp = ""
     my_string = list(my_string)
-    while (count < len(my_string) - 1):
+    while (count < len(my_string)):
         if (my_string[count] == 'c' or my_string[count] == 'C'):
             if (my_string[count] == 'C'):
                 my_string[count] = ' '
