@@ -2,7 +2,10 @@
 def multiple_returns(sentence):
     tuple_res = [len(sentence)]
     for mem in sentence:
-        tuple_res.append(mem)
+        if (len(sentence) == 0):
+            tuple_res.append(None)
+        else:
+            tuple_res.append(mem)
         break
     tuple_res = tuple(tuple_res)
     return (tuple_res)
