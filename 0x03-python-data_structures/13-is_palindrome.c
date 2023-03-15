@@ -22,7 +22,7 @@ int is_palindrome(listint_t **head)
 		while (tmp->next != stop)
 			tmp = tmp->next;
 		stop = tmp;
-		if ((*head)->n != stop->next>n)
+		if ((*head)->n != stop->next->n)
 			return (0);
 		tmp = (*head)->next;
 		*head = (*head)->next;
