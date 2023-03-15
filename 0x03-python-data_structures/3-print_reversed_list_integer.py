@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_reversed_list_integer(my_list=[]):
+    if (my_list == None):
+        exit()
     count = -1
     stop = (-1) * len(my_list)
     new_list = []
@@ -9,4 +11,3 @@ def print_reversed_list_integer(my_list=[]):
     my_list = new_list
     for mem in my_list:
         print("{:d}".format(mem))
-    return (my_list)
