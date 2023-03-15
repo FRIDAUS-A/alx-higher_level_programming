@@ -4,6 +4,7 @@ def multiple_returns(sentence):
     for mem in sentence:
         if (len(sentence) == 0):
             tuple_res.append(None)
+            break
         else:
             tuple_res.append(mem)
         break
