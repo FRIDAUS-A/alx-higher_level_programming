@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
     if (my_list is None):
-        exit()
+        return (None)
     count, result = 0, 0
     new_list = []
     for mem in my_list:
