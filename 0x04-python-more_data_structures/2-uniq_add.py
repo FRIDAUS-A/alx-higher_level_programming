@@ -12,6 +12,7 @@ def uniq_add(my_list=[]):
         while (count1 < len(new_list)):
             if (new_list[count] == new_list[count1]):
                 new_list.pop(count1)
+                count1 -= 1
             count1 += 1
         count += 1
     return (result)
