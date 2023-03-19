@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    if (my_list is None):
+    if (my_list is None or my_list == []):
         return (0)
     total, freq = 0, 0
     for mem in my_list:
