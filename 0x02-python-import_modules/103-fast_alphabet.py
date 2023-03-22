@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+str = "abcdefghijklmnopqrstuvwxyz"
+print(str.upper())
