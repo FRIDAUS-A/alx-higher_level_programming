@@ -1,6 +1,6 @@
 def safe_print_integer(value):
     try:
-        print("{:d}".format)
+        print("{:d}".format(value))
         return (True)
     except:
         pass
