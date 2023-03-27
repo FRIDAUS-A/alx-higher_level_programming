@@ -4,7 +4,8 @@ def safe_print_list(my_list=[], x=0):
     for ele in my_list:
         try:
             print(ele, end="")
-            count += 1
+            if (count < x):
+                count += 1
         except IndexError:
             pass
     print()
