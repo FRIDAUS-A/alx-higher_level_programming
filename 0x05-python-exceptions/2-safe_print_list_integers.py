@@ -4,7 +4,7 @@ def safe_print_list_integers(my_list=[], x=0):
     length = 0
     check = 0
     for ele in my_list:
-            length += 1
+        length += 1
     while (check < x):
         try:
             if (count < x):
