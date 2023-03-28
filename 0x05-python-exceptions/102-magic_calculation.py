@@ -9,5 +9,7 @@ def magic_calculation(a, b):
                 result = result + a**b / i
         except:
             result = b + a
-            break
+        break
     return (result)
+import dis
+dis.dis(magic_calculation)
