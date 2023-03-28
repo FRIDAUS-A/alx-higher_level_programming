@@ -4,6 +4,6 @@ def safe_function(fct, *args):
     try:
         c = fct(*args)
         return (c)
-    except (ValueError, NameError, ZeroDivisionError, TypeError, IndexError) as ne:
+    except Exception as ne:
         print("Exception: {}".format(ne), file=sys.stderr)
         return (None)
