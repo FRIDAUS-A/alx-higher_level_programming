@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Defines a class Square Class"""
 
+
 class Square:
     """A class Square"""
 
@@ -15,6 +16,7 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
+
     def area(self):
         """Initializes the method area.
             Args:
