@@ -32,13 +32,14 @@ class Square:
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-    
+
     @property
     def position(self):
         """retrieve the attribute position
             Args:
         """
         return self.__size
+
     @position.setter
     def position(self, value):
         """assign a value to position
@@ -46,6 +47,7 @@ class Square:
                 value: value of thee position
         """
         self.__size = value
+
     def area(self):
         return self.__size ** 2
 
@@ -58,13 +60,14 @@ class Square:
             while (count < self.__size):
                 count_in = 0
                 count_tmp = 0
+                count_check = 0
                 while (count_in < self.__size):
                     if (self.__position[1] > 0):
                         pass
-                    while (count_tmp == 0):
+                    while (count_check == 0 and count_tmp < self.__position[0]):
+                        print(" ", end="")
                         count_tmp += 1
-                        for ele in self.__position:
-                            print(" ", end="")
+                    count_check += 1
                     print("#", end="")
                     count_in += 1
                 print()
