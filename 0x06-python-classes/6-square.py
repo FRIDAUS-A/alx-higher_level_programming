@@ -49,7 +49,7 @@ class Square:
         if len(value) is not 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-        s   self.__position = value
+            self.__position = value
 
     def area(self):
         return self.__size ** 2
