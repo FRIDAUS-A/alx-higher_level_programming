@@ -56,7 +56,7 @@ class Square:
             Args:
         """
         count = 0
-        if self.__size is not 0:
+        if not self.__size == 0:
             while (count < self.__size):
                 count_in = 0
                 count_tmp = 0
