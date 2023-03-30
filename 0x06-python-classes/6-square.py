@@ -64,11 +64,12 @@ class Square:
                 while (count_in < self.__size):
                     if (self.__position[1] > 0):
                         pass
-                    while (count_check == 0 and
-                            count_tmp < self.__position[0]):
-                        print(" ", end="")
-                        count_tmp += 1
-                    count_check += 1
+                    else:
+                        while (count_check == 0 and
+                                count_tmp < self.__position[0]):
+                            print(" ", end="")
+                            count_tmp += 1
+                        count_check += 1
                     print("#", end="")
                     count_in += 1
                 print()
