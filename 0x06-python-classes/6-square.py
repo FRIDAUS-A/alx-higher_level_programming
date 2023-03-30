@@ -38,7 +38,7 @@ class Square:
         """retrieve the attribute position
             Args:
         """
-        return self.__size
+        return self.__position
 
     @position.setter
     def position(self, value):
@@ -46,7 +46,7 @@ class Square:
             Args:
                 value: value of thee position
         """
-        self.__size = value
+        self.__position = value
 
     def area(self):
         return self.__size ** 2
