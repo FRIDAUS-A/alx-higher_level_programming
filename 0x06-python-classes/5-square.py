@@ -40,10 +40,13 @@ class Square:
             Args:
         """
         count = 0
-        while (count < self.__size):
-            count_in = 0
-            while (count_in < self.__size):
-                print("#", end="")
-                count_in += 1
+        if self.__size is not 0:
+            while (count < self.__size):
+                count_in = 0
+                while (count_in < self.__size):
+                    print("#", end="")
+                    count_in += 1
+                print()
+                count += 1
+        else:
             print()
-            count += 1
