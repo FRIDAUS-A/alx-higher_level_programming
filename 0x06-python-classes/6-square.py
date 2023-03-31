@@ -78,3 +78,4 @@ class Square:
                 count += 1
         else:
             print()
+            return
