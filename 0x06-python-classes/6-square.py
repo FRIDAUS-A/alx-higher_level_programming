@@ -61,6 +61,7 @@ class Square:
             Args:
         """
         count = 0
+        [print("") for i in range(0, self.__position[1])]
         if self.__size != 0:
             while (count < self.__size):
                 count_in = 0
