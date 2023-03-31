@@ -72,7 +72,7 @@ class Square:
                 while (count_in < self.__size):
                     print("#", end="")
                     count_in += 1
-                print()
+                print("")
                 count += 1
         else:
             print()
