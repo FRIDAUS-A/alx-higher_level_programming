@@ -46,9 +46,9 @@ class Square:
             Args:
                 value: value of thee position
         """
-        if (len(value) is not 2 or type(value) is not tuple
-                or type(value) is not int or
-                type(value) is not int):
+        if (len(value) != 2 or type(value) != tuple
+                or type(value) != int or
+                type(value) != int):
             raise TypeError("position must be a tuple of 2 position")
         else:
             self.__position = value
