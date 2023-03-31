@@ -75,5 +75,5 @@ class Square:
                 print("")
                 count += 1
         else:
-            print()
+            print("")
             return
