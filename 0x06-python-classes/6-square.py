@@ -61,19 +61,13 @@ class Square:
             Args:
         """
         count = 0
-        [print("") for i in range(0, self.__position[1])]
-        if self.__size != 0:
-            while (count < self.__size):
-                count_in = 0
-                count_tmp = 0
-                while (count_tmp < self.__position[0]):
-                    print(" ", end="")
-                    count_tmp += 1
-                while (count_in < self.__size):
-                    print("#", end="")
-                    count_in += 1
-                print("")
-                count += 1
-        else:
-            print("")
+        if self.__size == 0:
+            print()
             return
+        [print("") for i in range(0, self.__position[1])]
+        for j in range(0, self.__size):
+            for m in range(0, self.__position[0]):
+                print(" ", end="")
+            for k in range(0, self.__size):
+                print("#", end="")
+            print()
