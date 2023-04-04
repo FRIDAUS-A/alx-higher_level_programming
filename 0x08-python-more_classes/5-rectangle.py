@@ -104,6 +104,7 @@ class Rectangle:
             Args:
         """
         return (f"Rectangle({self.__width}, {self.__height})")
+
     def __del__(self):
         """del is the destructor method for deleting an object
             Args:
