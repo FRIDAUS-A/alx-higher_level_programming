@@ -5,6 +5,7 @@
 class Rectangle:
     """Defines a class Rectangle"""
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Defines a constructor for the class
             Args:
@@ -21,7 +22,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if (self.__width < 0):
             raise ValueError("width must be >= 0")
-        self.number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     @property
     def height(self):
@@ -112,4 +113,4 @@ class Rectangle:
             Args:
         """
         print(f"Bye rectangle...")
-        self.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
