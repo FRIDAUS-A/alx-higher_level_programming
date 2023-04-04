@@ -80,6 +80,9 @@ class Rectangle:
         """str method that defines the definition of the object
             Args:
         """
+        if (width == 0 or height == 0):
+            string = ""
+            return (string)
         y = self.__height
         x = self.__width
         tmp_stor = []
