@@ -77,6 +77,9 @@ class Rectangle:
             return (2 * (self.__width + self.__height))
 
     def __str__(self):
+        """str method that defines the definition of the object
+            Args:
+        """
         y = self.__height
         x = self.__width
         tmp_stor = []
