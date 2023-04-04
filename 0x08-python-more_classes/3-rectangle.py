@@ -80,7 +80,7 @@ class Rectangle:
         """str method that defines the definition of the object
             Args:
         """
-        if (width == 0 or height == 0):
+        if (self.__width == 0 or self.__height == 0):
             string = ""
             return (string)
         y = self.__height
