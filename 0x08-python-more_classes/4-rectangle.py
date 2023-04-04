@@ -98,5 +98,6 @@ class Rectangle:
         for ele in tmp_stor:
             stor += ele
         return (stor)
+
     def __repr__(self):
         return (f"Rectangle({self.__width}, {self.__height})")
