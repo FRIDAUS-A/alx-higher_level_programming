@@ -70,4 +70,4 @@ class Rectangle:
         """A method to calculate the perimeter of the rectangle
             Args:
         """
-        return (self.__width + self.__height)
+        return (2 * (self.__width + self.__height))
