@@ -115,7 +115,7 @@ class Rectangle:
         """
         print(f"Bye rectangle...")
         Rectangle.number_of_instances -= 1
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """A method that returns the rectangle with the biggest area
@@ -131,9 +131,13 @@ class Rectangle:
             return (rect_1)
         else:
             return (rect_2)
-    
+
     @classmethod
     def square(cls, size=0):
+        """defines a class method to change the size of the attribute
+            Args:
+                size (int): value to put
+        """
         cls.__height = size
         cls.__width = size
         return cls(cls.__height, cls.__width)
