@@ -92,24 +92,10 @@ class Rectangle:
         tmp_stor = []
         stor = ""
         while (y > 0):
-            x = self.__width
-            while (x > 0):
-                tmp_stor.append(self.print_symbol)
-                x -= 1
+            tmp_stor.append(str(self.print_symbol * x))
             if (y != 1):
                 tmp_stor.append("\n")
             y -= 1
-        if (type(self.print_symbol) == list):
-            count = 0
-            tmp_stor = str(tmp_stor)
-            while (count < len(tmp_stor)):
-                if (count == 0 or count == len(tmp_stor) - 1):
-                    count += 1
-                    continue
-                else:
-                    stor += tmp_stor[count]
-                    count += 1
-            return (stor)
         for ele in tmp_stor:
             stor += ele
         return (stor)
