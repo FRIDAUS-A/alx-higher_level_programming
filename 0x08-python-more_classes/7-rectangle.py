@@ -98,7 +98,7 @@ class Rectangle:
                 x -= 1
             if (y != 1):
                 tmp_stor.append("\n")
-            y -=1
+            y -= 1
         if (type(self.print_symbol) == list):
             count = 0
             tmp_stor = str(tmp_stor)
@@ -113,6 +113,7 @@ class Rectangle:
         for ele in tmp_stor:
             stor += ele
         return (stor)
+
     def __repr__(self):
         """repr method that defines the representation of the object
             Args:
