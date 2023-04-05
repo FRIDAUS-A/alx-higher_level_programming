@@ -92,7 +92,10 @@ class Rectangle:
         tmp_stor = []
         stor = ""
         while (y > 0):
-            tmp_stor.append(str(self.print_symbol * x))
+            x = self.__width
+            while (x > 0):
+                tmp_stor.append(str(self.print_symbol))
+                x -= 1
             if (y != 1):
                 tmp_stor.append("\n")
             y -= 1
