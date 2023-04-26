@@ -8,6 +8,6 @@ def append_write(filename="", text=""):
             filename(string): name of file
             text(string): text
     """
-    with open(filename, "a") as file:
-        file.append(text)
+    with open(filename, "w") as file:
+        file.write(text)
     return (len(text))
