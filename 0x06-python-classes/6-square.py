@@ -61,12 +61,14 @@ class Square:
             Args:
         """
         i = self.__size
+        if (self.__position[1] > 0):
+            print()
         while (i > 0):
             j = self.__size
             while (j > 0):
                 line = self.__position[0]
                 while (line > 0 and j == self.__size):
-                    if (self.__position[1] < 0):
+                    if (self.__position[1] <= 0):
                         print(' ', end="")
                     else:
                         print('_', end="")
