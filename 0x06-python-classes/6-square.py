@@ -63,7 +63,7 @@ class Square:
         if self.__size == 0:
             print("")
             return
-        [print() for mem in range(0,self.__position[1])]
+        [print() for mem in range(0, self.__position[1])]
         i = self.__size
         while (i > 0):
             j = self.__size
