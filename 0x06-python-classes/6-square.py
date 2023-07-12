@@ -60,14 +60,18 @@ class Square:
         """A method that prints square
             Args:
         """
-        count = 0
-        if self.__size == 0:
-            print("")
-            return
-        [print("") for i in range(0, self.__position[1])]
-        for j in range(0, self.__size):
-            for m in range(0, self.__position[0]):
-                print(" ", end="")
-            for k in range(0, self.__size):
-                print("#", end="")
-            print("")
+        i = self.__size
+        while (i > 0):
+            j = self.__size
+            while (j > 0):
+                line = self.__position[0]
+                while (line > 0 and j == self.__size):
+                    if (self.__position[1] < 0):
+                        print(' ', end="")
+                    else:
+                        print('_', end="")
+                    line -= 1
+                print('#', end="")
+                j -= 1
+            i -= 1
+            print()
