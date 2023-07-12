@@ -63,8 +63,6 @@ class Square:
         i = self.__size
         while (i > 0):
             j = self.__size
-            if (self.__position[1] > 0 and i == self.__size):
-                print()
             while (j > 0):
                 line = self.__position[0]
                 while (line > 0 and j == self.__size):
