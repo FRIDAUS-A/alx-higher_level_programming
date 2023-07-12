@@ -64,15 +64,7 @@ class Square:
             print("")
             return
         [print("") for mem in range(0, self.__position[1])]
-        i = self.__size
-        while (i > 0):
-            j = self.__size
-            while (j > 0):
-                line = self.__position[0]
-                while (line > 0 and j == self.__size):
-                    print(' ', end="")
-                    line -= 1
-                print('#', end="")
-                j -= 1
-            i -= 1
-            print("")
+        for i in range(0, self.__size):
+            [print(' ', end="") for line in range(0, self.__position[0])]
+            [print('#', end="") for j in range(0, self.__size)]
+            print()
