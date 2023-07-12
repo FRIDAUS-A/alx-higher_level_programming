@@ -70,8 +70,6 @@ class Square:
                 while (line > 0 and j == self.__size):
                     if (self.__position[1] <= 0):
                         print(' ', end="")
-                    else:
-                        print('_', end="")
                     line -= 1
                 print('#', end="")
                 j -= 1
