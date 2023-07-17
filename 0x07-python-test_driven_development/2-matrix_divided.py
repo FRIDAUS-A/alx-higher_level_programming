@@ -3,6 +3,11 @@
 """A FUNCTION THAT DIVIDES ALL ELEMENTS OF A MATRIX"""
 
 def matrix_divided(matrix, div):
+    """A function that divides a matrix by a value div
+        Args:
+            matrix (list[list]): maatrix
+            div (float or int): 
+    """
     if (type(matrix) is not list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     else:
