@@ -4,6 +4,7 @@
 import unittest
 from models.base import Base
 
+
 class TestBase(unittest.TestCase):
     def test_unique(self):
         """Test that each instance as a unique id"""
@@ -25,6 +26,7 @@ class TestBase(unittest.TestCase):
         """check if the __nb_objects is a private instance attribute"""
         with self.assertRaises(AttributeError):
             Base.__nb_objects
+
 
 if __name__ == '__main__':
     unittest.main()
