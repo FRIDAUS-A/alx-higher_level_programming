@@ -17,14 +17,14 @@ class Square(Rectangle):
             id (int): object id
         """
         super().__init__(size, size, x, y, id)
+        self.__size = size
         self.__x = x
         self.__y = y
-        self.__size = size
 
     @property
     def size(self):
         """getter for size"""
-        return (self.__size)
+        return (self.width)
 
     @size.setter
     def size(self, value):
@@ -34,7 +34,7 @@ class Square(Rectangle):
         if (value <= 0):
             raise ValueError("size must be > 0")
         else:
-            self.__size = value
+            self.height = value
 
     def __str__(self):
         """return thr string representation of an object"""
