@@ -4,6 +4,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """The class Square"""
 
@@ -36,8 +37,8 @@ class Square(Rectangle):
             self.__size = value
 
     def __str__(self):
-            """return thr string representation of an object"""
-            return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__size}"
+        """return thr string representation of an object"""
+        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__size}"
 
     def update(self, *args, **kwargs):
         """update the attributes"""
@@ -63,5 +64,6 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
-        dict = {'id': self.id, 'x': self.__x, 'size': self.__size, 'y': self.__y}
+        dict = {'id': self.id, 'x': self.__x,
+                'size': self.__size, 'y': self.__y}
         return dict
