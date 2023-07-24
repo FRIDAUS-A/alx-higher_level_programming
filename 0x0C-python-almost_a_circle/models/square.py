@@ -16,11 +16,6 @@ class Square(Rectangle):
             id (int): object id
         """
         super().__init__(size, size, x, y, id)
-        self.__size = size
-        self.__width = size
-        self.__height = size
-        self.__x = x
-        self.__y = y
 
     @property
     def size(self):
