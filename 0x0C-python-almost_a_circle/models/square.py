@@ -16,10 +16,14 @@ class Square(Rectangle):
             y (int): position y of the square
             id (int): object id
         """
+        super().__init__(size, size, x, y, id)
+        if (type(size) is not int):
+            raise TypeError("width must be an integer")
+        if (size <= 0):
+            raise ValueError("width must be > 0")
         self.__size = size
         self.__x = x
         self.__y = y
-        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
