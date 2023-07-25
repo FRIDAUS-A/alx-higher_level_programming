@@ -62,7 +62,7 @@ class Base:
     def load_from_file(cls):
         filename = cls.__name__ + ".json"
         try:
-            with open("fileaname", "r") as file:
+            with open(fileaname, "r") as file:
                 json_tmp = file.read()
                 result_list = cls.from_json_string(json_tmp)
                 if result_list == []
