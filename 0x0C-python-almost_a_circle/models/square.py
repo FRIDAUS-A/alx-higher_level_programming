@@ -17,11 +17,6 @@ class Square(Rectangle):
             id (int): object id
         """
         super().__init__(size, size, x, y, id)
-        self.width = size
-        self.height = size
-        self.__size = size
-        self.__x = x
-        self.__y = y
 
     @property
     def size(self):
@@ -36,7 +31,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """return thr string representation of an object"""
-        return f"[Square] ({self.id}) {self.__x}/{self.__y} - {self.__size}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
         """update the attributes"""
