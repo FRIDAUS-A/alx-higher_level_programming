@@ -4,6 +4,7 @@
 
 import json
 
+
 class Base:
     """Base class for other classes"""
     __nb_objects = 0
@@ -18,6 +19,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string representation of list_dictionaries"""
@@ -43,3 +45,31 @@ class Base:
         if json_string is None or len(json_string) == 0:
             return ([])
         return(json.loads(json_string))
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+        if (cls.__name__ == "Rectangle"):
+            dummy = cls(2, 2)
+        elif (cls.__name__ == "Square"):
+            dummy = cls(2)
+        else:
+            dummy = None
+        dummy.update(**dictionary)
+        return (dummy)
+
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        try:
+            with open("fileaname", "r") as file:
+                json_tmp = file.read()
+                result_list = cls.from_json_string(json_tmp)
+                if result_list == []
+                return []
+                instances = [cls.create(**d) for d in result_list]
+                return (instances)
+        except FileNotFoundError:
+            return []
+
+            
