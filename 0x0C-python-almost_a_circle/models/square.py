@@ -39,24 +39,24 @@ class Square(Rectangle):
             if (len(args) >= 1):
                 self.id = args[0]
             if (len(args) >= 2):
-                self.__size = args[1]
+                self.size = args[1]
             if (len(args) >= 3):
-                self.__x = args[2]
+                self.x = args[2]
             if (len(args) >= 4):
-                self.__y = args[3]
+                self.y = args[3]
         else:
             for key, value in kwargs.items():
                 if key == "id":
                     self.id = value
                 if key == "size":
-                    self.__size = value
+                    self.size = value
                 if key == "x":
-                    self.__x = value
+                    self.x = value
                 if key == "y":
-                    self.__y = value
+                    self.y = value
 
     def to_dictionary(self):
         """returns the dictionary representation of a Square"""
-        dict = {'id': self.id, 'x': self.__x,
-                'size': self.__size, 'y': self.__y}
+        dict = {'id': self.id, 'x': self.x,
+                'size': self.size, 'y': self.y}
         return dict
