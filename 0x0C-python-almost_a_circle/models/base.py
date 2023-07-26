@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """THE BASE CLASS"""
-
-
 import json
 
 
@@ -30,7 +28,10 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """writes the JSON string representation of list_objs to a file"""
+        """writes the JSON string representation of list_objs to a file
+            Args:
+                list_objs(list): json representation of list_dictionaries
+        """
         if list_objs is None:
             list_objs = []
         filename = cls.__name__ + ".json"
