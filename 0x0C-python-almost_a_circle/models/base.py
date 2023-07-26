@@ -63,7 +63,7 @@ class Base:
         """returns a list of instances:"""
         filename = cls.__name__ + ".json"
         try:
-            with open(fileaname, "r") as file:
+            with open(filename, "r") as file:
                 json_tmp = file.read()
                 result_list = cls.from_json_string(json_tmp)
                 if not result_list:
