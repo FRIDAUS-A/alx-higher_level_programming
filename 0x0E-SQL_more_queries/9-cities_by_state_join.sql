@@ -1,5 +1,5 @@
 -- A script that lists all cities contained in the database hbtn_0d_usa.
 
-SELECT id, name, FROM cities
-JOIN ON cities.id = states.state_id
-ORDER BY id ASC;
+SELECT c.id, c.name, s.name FROM cities as c
+JOIN states as s ON c.state_id = s.id
+ORDER BY c.id;
