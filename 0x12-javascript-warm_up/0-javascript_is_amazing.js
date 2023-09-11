@@ -1,3 +1,3 @@
 #!/usr/bin/node
 
-console.log("JavaScrpt is amazing");
+console.log("JavaScript is amazing");
