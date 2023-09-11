@@ -10,5 +10,9 @@ if (len === 2 || len === 3) {
     newArray.push(Number((myArray[index])));
     newArray.sort();
   }
-  console.log(newArray[newArray.length - 2]);
+  let pos = newArray.length - 1;
+  while (newArray[pos] === newArray[pos - 1]) {
+    pos -= 1;
+  }
+  console.log(newArray[pos - 1]);
 }
