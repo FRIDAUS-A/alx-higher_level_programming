@@ -4,7 +4,7 @@ const len = process.argv.length;
 const myArray = process.argv;
 const newArray = [];
 if (len === 2 || len === 3) {
-  console.log('%d', 0);
+  console.log('0');
 } else {
   for (let index = 2; index < len; index++) {
     newArray.push(Number((myArray[index])));
