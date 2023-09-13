@@ -1,10 +1,14 @@
 #!/usr/bin/node
 const fs = require('fs');
-fs.readFile('fileA', (err, data1) => {
+fs.readFile(process.argv[2], (err, data1) => {
   if (err) throw err;
-  process.stdout.write(data1.toString());
+  fs.writeFile(process.argv[4], data1, (err) => {
+    if (err) throw err;
+  });
 });
-fs.readFile('fileB', (err, data2) => {
+fs.readFile(process.argv[3], (err, data2) => {
   if (err) throw err;
-  process.stdout.write(data2.toString());
+  fs.appendFile(process.argv[4], data2, (err) => {
+    if (err) throw err;
+  });
 });
