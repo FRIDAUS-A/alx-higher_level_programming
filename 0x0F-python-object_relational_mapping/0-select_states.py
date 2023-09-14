@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""A python script to get all the colums in a table"""
 import sys
 import MySQLdb
 db = MySQLdb.connect(host='localhost', user=sys.argv[1],
