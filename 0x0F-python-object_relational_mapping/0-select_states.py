@@ -10,3 +10,5 @@ if __name__ == '__main__':
     result = cur.fetchall()
     for value in result:
         print(value)
+    cur.close()
+    db.close()
