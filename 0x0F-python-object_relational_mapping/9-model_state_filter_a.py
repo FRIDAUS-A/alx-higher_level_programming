@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a script that lists all State objects that 
+a script that lists all State objects that
 contain the letter a from the database hbtn_0e_6_usa
 """
 import sys
@@ -17,4 +17,4 @@ if __name__ == '__main__':
     session = Session()
     for instance in session.query(State).filter(State.name.ilike('%a%')).\
             order_by(State.id):
-                print(f"{instance.id}: {instance.name}")
+        print(f"{instance.id}: {instance.name}")
