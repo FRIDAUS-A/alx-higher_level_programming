@@ -11,3 +11,5 @@ if __name__ == '__main__':
     for value in res:
         if value[1][0] == 'N':
             print(value)
+    cur.close()
+    db.close()
