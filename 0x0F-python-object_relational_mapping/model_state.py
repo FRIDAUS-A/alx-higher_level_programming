@@ -10,6 +10,7 @@ Base = declarative_base()
 
 
 class State(Base):
+    """The class states which is mapped to a table in the database"""
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, unique=True, autoincrement=True)
     name = Column(String(128), nullable=False)
