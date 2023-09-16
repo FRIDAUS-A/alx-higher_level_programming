@@ -20,22 +20,8 @@ if __name__ == '__main__':
     state_list = list()
     city_list = []
 
-    for state, city in session.query(State, City).\
-            join(City).order_by(State.id):
-        state_list.append([state.id, state.name])
-        city_list.append([city.id, city.name, city.state_id])
-    new_list = []
-    count = 0
-    while (count < len(state_list)):
-        value = state_list[count]
-        for mem in state_list:
-            if value == mem:
-                count += 1
-        new_list.append(value)
-    state_list.clear()
-    for state in new_list:
-        print(f"{state[0]}: {state[1]}")
-        for city in city_list:
-            if state[0] == city[2]:
-                print(f"    {city[0]}: {city[1]}")
+    for state in session.query(State):
+        print(f"{state.id}: {state.name}")
+        for city in state.cities:
+            print(f"    {city.id}: {city.name}")
     session.close()
