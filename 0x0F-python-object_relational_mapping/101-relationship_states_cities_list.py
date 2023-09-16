@@ -38,3 +38,4 @@ if __name__ == '__main__':
         for city in city_list:
             if state[0] == city[2]:
                 print(f"    {city[0]}: {city[1]}")
+    session.close()
