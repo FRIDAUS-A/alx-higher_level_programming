@@ -14,4 +14,5 @@ class State(Base):
     __tablename__ = "states"
     id = Column(Integer, primary_key=True, unique=True)
     name = Column(String(128), nullable=False)
-    cities = relationship("City", back_populates="states", cascade='all, delete-orphan')
+    cities = relationship("City", back_populates="states",
+                          cascade='all, delete-orphan')
