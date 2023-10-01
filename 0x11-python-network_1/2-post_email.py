@@ -10,7 +10,6 @@ import sys
 if __name__ == '__main__':
     dic = {}
     dic['email'] = sys.argv[2]
-    print(dic)
     value = urllib.parse.urlencode(dic)
     value = value.encode('ascii')
     req = urllib.request.Request(sys.argv[1], value)
