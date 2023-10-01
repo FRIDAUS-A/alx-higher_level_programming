@@ -13,7 +13,7 @@ if __name__ == '__main__':
     count = 0
     for mem in json:
         count += 1
-        print(f"{mem.get('sha')}:"
+        print(f"{mem.get('sha')}: "
               f"{mem.get('commit').get('author').get('name')}")
         if count == 10:
             break
