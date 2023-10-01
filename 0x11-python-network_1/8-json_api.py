@@ -14,9 +14,11 @@ if __name__ == '__main__':
     else:
         data['q'] = sys.argv[1]
     html = requests.post("http://0.0.0.0:5000/search_user", data=data)
-    if html.text == {}:
-        print("No result")
-    elif type(html.text) != str:
+    json = html.json()
+    try:
+        if json == {}:
+            print("No result")
+        else:
+            print(f"[{json['id']}]  {json['name']}")
+    except ValueError:
         print("Not a valid JSON")
-    else:
-        print(html.text)
