@@ -8,7 +8,6 @@ import requests
 if __name__ == '__main__':
     url = "https://api.github.com/repos/" + sys.argv[2] + "/" +\
                                             sys.argv[1] + "/commits"
-    print(url)
     body = requests.get(url)
     json = body.json()
     count = 0
