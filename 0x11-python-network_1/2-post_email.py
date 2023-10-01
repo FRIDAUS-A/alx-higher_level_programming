@@ -8,9 +8,10 @@ import urllib.request
 import urllib.parse
 import sys
 if __name__ == '__main__':
-    dict = {}
-    dict['email'] = sys.argv[2]
-    value = urllib.parse.urlencode(dict)
+    dic = {}
+    dic['email'] = sys.argv[2]
+    print(dic)
+    value = urllib.parse.urlencode(dic)
     value = value.encode('ascii')
     req = urllib.request.Request(sys.argv[1], value)
     with urllib.request.urlopen(req) as response:
