@@ -11,4 +11,7 @@ if __name__ == '__main__':
     header = {}
     header["Authorization"] = f"Bearer {sys.argv[2]}"
     body = requests.get(url, headers=header)
-    print(body.json()['id'])
+    if (len(body.json()) != 2):
+        print(body.json())
+    else:
+        print(None)
